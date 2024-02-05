@@ -1,8 +1,7 @@
 <?php
+/* Workin one */
 
 /**
- * This is the model class for table "tbl_comment".
- *
  * The followings are the available columns in table 'tbl_comment':
  * @property integer $id
  * @property string $content
@@ -12,14 +11,21 @@
  * @property string $email
  * @property string $url
  * @property integer $post_id
- *
- * The followings are the available model relations:
- * @property Post $post
  */
 class Comment extends CActiveRecord
 {
 	const STATUS_PENDING = 1;
 	const STATUS_APPROVED = 2;
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return static the static model class
+	 */
+	public static function model($className = __CLASS__)
+	{
+		return parent::model($className);
+	}
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -33,32 +39,15 @@ class Comment extends CActiveRecord
 	 */
 	public function rules()
 	{
-		/*
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, status, author, email, post_id', 'required'),
-			array('status, create_time, post_id', 'numerical', 'integerOnly'=>true),
-			array('author, email, url', 'length', 'max'=>128),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('id, content, status, create_time, author, email, url, post_id', 'safe', 'on'=>'search'),
-		);
-		*/
-		return array(
 			array('content, author, email', 'required'),
 			array('author, email, url', 'length', 'max' => 128),
-
+			array('email', 'email'),
+			array('url', 'url'),
 		);
 	}
-	public function getAuthorLink()
-	{
-		if (!empty($this->url))
-			return CHtml::link(CHtml::encode($this->author), $this->url);
-		else
-			return CHtml::encode($this->author);
-	}
-
 
 	/**
 	 * @return array relational rules.
@@ -88,62 +77,77 @@ class Comment extends CActiveRecord
 			'post_id' => 'Post',
 		);
 	}
+
+	/**
+	 * Approves a comment.
+	 */
 	public function approve()
 	{
-		$this->status = Comment::STATUS_APPROVED;
+		$this->status = self::STATUS_APPROVED;
 		$this->update(array('status'));
 	}
 
 	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 *
-	 * Typical usecase:
-	 * - Initialize the model fields with values from filter form.
-	 * - Execute this method to get CActiveDataProvider instance which will filter
-	 * models according to data in model fields.
-	 * - Pass data provider to CGridView, CListView or any similar widget.
-	 *
-	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
+	 * @param Post the post that this comment belongs to. If null, the method
+	 * will query for the post.
+	 * @return string the permalink URL for this comment
 	 */
-	public function search()
+	public function getUrl($post = null)
 	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
+		if ($post === null)
+			$post = $this->post;
+		return $post->url . '#c' . $this->id;
+	}
 
-		$criteria=new CDbCriteria;
+	/**
+	 * @return string the hyperlink display for the current comment's author
+	 */
+	public function getAuthorLink()
+	{
+		if (!empty($this->url))
+			return CHtml::link(CHtml::encode($this->author), $this->url);
+		else
+			return CHtml::encode($this->author);
+	}
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('status',$this->status);
-		$criteria->compare('create_time',$this->create_time);
-		$criteria->compare('author',$this->author,true);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('url',$this->url,true);
-		$criteria->compare('post_id',$this->post_id);
+	/**
+	 * @return integer the number of comments that are pending approval
+	 */
+	public function getPendingCommentCount()
+	{
+		$count = $this->count(
+			array(
+				'condition' => 'status=:status',
+				'params' => array('status'=> self::STATUS_PENDING),
+			)
+			);
+			return $count;
+	}
 
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
+	/**
+	 * @param integer the maximum number of comments that should be returned
+	 * @return array the most recently added comments
+	 */
+	public function findRecentComments($limit = 10)
+	{
+		return $this->with('post')->findAll(array(
+			'condition' => 't.status=' . self::STATUS_APPROVED,
+			'order' => 't.create_time DESC',
+			'limit' => $limit,
 		));
 	}
 
 	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Comment the static model class
+	 * This is invoked before the record is saved.
+	 * @return boolean whether the record should be saved.
 	 */
-	public static function model($className=__CLASS__)
+	protected function beforeSave()
 	{
-		return parent::model($className);
+		if (parent::beforeSave()) {
+			if ($this->isNewRecord)
+				$this->create_time = time();
+			return true;
+		} else
+			return false;
 	}
-	protected function beforeSave(){
-		if(parent::beforeSave()){
-			if($this->isNewRecord){
-				$this->create_time=time();
-				return true;
-			}
-			else return false;
-		}
-	}
-	
 }

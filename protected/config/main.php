@@ -7,7 +7,8 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'My Blog Web Application',
+	'defaultController' => 'post',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -17,7 +18,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
-	'defaultController' => 'post',
+	
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -51,6 +52,7 @@ return array(
 			),
 		),
 		
+		
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
@@ -59,7 +61,7 @@ return array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',
 		),
-
+		/*
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -68,13 +70,15 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
+				
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
+				
 			),
-		),
+		), */
+		
+		
 
 	),
 
@@ -85,5 +89,6 @@ return array(
 		'adminEmail'=>'webmaster@example.com',
 		'commentNeedApproval'=>true,
 		'tagCloudCount' => 20,
+		'recentCommentCount'=>10,
 	),
 );

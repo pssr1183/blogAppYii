@@ -4533,3 +4533,1161 @@ Stack trace:
 REQUEST_URI=/blogApp/index.php/post/index?tag=blog
 HTTP_REFERER=http://localhost/blogApp/index.php/post/index?tag=test
 ---
+2024/02/02 08:16:19 [error] [exception.CException] CException: RecentComments and its behaviors do not have a method or closure named "findRecentComments". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(2): CComponent->__call('findRecentComme...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(166): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php?r=comment/index
+---
+2024/02/02 08:16:29 [error] [exception.CException] CException: RecentComments and its behaviors do not have a method or closure named "findRecentComments". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(2): CComponent->__call('findRecentComme...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(166): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php?r=comment/index
+---
+2024/02/02 08:16:31 [error] [exception.CException] CException: RecentComments and its behaviors do not have a method or closure named "findRecentComments". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(2): CComponent->__call('findRecentComme...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(166): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php
+---
+2024/02/02 08:16:43 [error] [exception.CException] CException: RecentComments and its behaviors do not have a method or closure named "findRecentComments". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(2): CComponent->__call('findRecentComme...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(166): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php
+---
+2024/02/02 08:22:46 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (63)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 08:22:46 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (63)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 08:28:14 [error] [exception.CException] CException: Property "Comment.Author" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Author')
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(3): CActiveRecord->__get('Author')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(181): CController->render('admin', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionAdmin()
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/admin')
+#24 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/blogApp/index.php/post/admin
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/02 08:54:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "r=posts/index". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('r=posts/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogApp/index.php/r=posts/index
+---
+2024/02/02 08:54:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "r=post/index". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('r=post/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blogApp/index.php/r=post/index
+---
+2024/02/02 09:01:17 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php:206
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php(75): PostController->loadModel()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/blogApp/index.php/post/view
+HTTP_REFERER=http://localhost/blogApp/index.php/post/2
+---
+2024/02/02 10:43:54 [error] [exception.CHttpException.400] CHttpException: Invalid request... in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php:173
+Stack trace:
+#0 [internal function]: CommentController->actionApprove('20')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('approve')
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/approve')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/blogApp/index.php/comment/approve/20
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/index?tag=yii
+---
+2024/02/02 10:54:43 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (113)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 10:54:43 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (113)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 11:10:29 [error] [php] Object of class Comment could not be converted to string (/Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php:108)
+Stack trace:
+#0 unknown(0): CommentController->actionUpdate()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(114): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CommentController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CommentController->filterAccessControl()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CommentController->runActionWithFilters()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CommentController->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CWebApplication->run()
+REQUEST_URI=/blogApp/index.php/comment/update/20
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (108)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:03:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.{{comment}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{comment}}`.
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (47)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:03:22 [error] [exception.CDbException] CDbException: The table "{{comment}}" for active record class "Comment" cannot be found in the database. in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:2391
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(Comment))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(663): CActiveRecord->getMetaData()
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(1493): CActiveRecord->getTableSchema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(119): CActiveRecord->findByPk('20')
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(47): CommentController->loadModel()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionUpdate()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blogApp/index.php/comment/update/20
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/20
+---
+2024/02/02 14:11:31 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:11:31 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:11:31 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting end of file in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Post.php:186
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Post')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(397): spl_autoload_call('Post')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveFinder.php(182): CActiveRecord::model('Post')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveFinder.php(231): CActiveFinder->getModel('Post')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveFinder.php(300): CActiveFinder->buildJoinTree(Object(CJoinElement), 'post')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(915): CActiveFinder->__construct(Object(Comment), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(1363): CActiveRecord->getActiveFinder(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php(129): CActiveRecord->findAll(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(8): Comment->findRecentComments(10)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/recentComments.php(2): RecentComments->getRecentComments()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#15 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/RecentComments.php(11): CWidget->render('recentComments')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): RecentComments->renderContent()
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#18 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(15): CBaseController->widget('RecentComments', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#22 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(59): CController->render('update', Array)
+#23 [internal function]: CommentController->actionUpdate('20')
+#24 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#28 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#29 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#30 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#31 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#32 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#33 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#34 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#35 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#36 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#37 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#38 {main}
+REQUEST_URI=/blogApp/index.php/comment/update/20
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/20
+---
+2024/02/02 14:12:01 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:12:01 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:12:22 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:12:22 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (53)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:15:12 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:15:12 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:08 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:09 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:10 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "content" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "author" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "email" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "url" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:16:11 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:18:51 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:18:51 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:15 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:15 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:18 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:18 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:18 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:18 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:19 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:19 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:19 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:19:19 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:03 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:03 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:05 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:05 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:15 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:15 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:18 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:18 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:29 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:20:29 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:22:06 [error] [exception.Error] Error: Class 'Comment' not found in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:397
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/24
+---
+2024/02/02 14:22:24 [error] [exception.Error] Error: Class 'Comment' not found in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:397
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/24
+---
+2024/02/02 14:22:25 [error] [exception.Error] Error: Class 'Comment' not found in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:397
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/24
+---
+2024/02/02 14:22:37 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:22:37 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:24:02 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:24:02 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:24:11 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:24:11 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:30:37 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:30:37 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:31:11 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:31:11 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:31:32 [error] [exception.Error] Error: Cannot instantiate abstract class CActiveRecord in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php:397
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(200): CActiveRecord::model()
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(111): CommentController->loadModel('24')
+#2 [internal function]: CommentController->actionUpdate('24')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blogApp/index.php/comment/update/24
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/update/24
+---
+2024/02/02 14:32:53 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/02 14:32:53 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:01:47 [error] [exception.Error] Error: Using $this when not in object context in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:118
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): Comment::getPendingCommentCount()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:04:48 [error] [exception.Error] Error: Using $this when not in object context in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:118
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): Comment::getPendingCommentCount()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:09:58 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:121
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(397): spl_autoload_call('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:10:00 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:121
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(397): spl_autoload_call('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:10:16 [error] [exception.Error] Error: Using $this when not in object context in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:118
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): Comment::getPendingCommentCount()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:10:18 [error] [exception.Error] Error: Using $this when not in object context in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:118
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): Comment::getPendingCommentCount()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:10:55 [error] [exception.ParseError] ParseError: syntax error, unexpected ')' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:123
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(397): spl_autoload_call('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:10:56 [error] [exception.ParseError] ParseError: syntax error, unexpected ')' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:123
+Stack trace:
+#0 [internal function]: YiiBase::autoload('Comment')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(397): spl_autoload_call('Comment')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(165): CActiveRecord::model('Comment')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CActiveDataProvider.php(87): CActiveDataProvider->getModel('Comment')
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(151): CActiveDataProvider->__construct('Comment', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:11:02 [error] [exception.Error] Error: Using $this when not in object context in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/models/Comment.php:118
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): Comment::getPendingCommentCount()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:11:55 [error] [exception.Error] Error: Undefined class constant 'getPendingCommentCount' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:11:56 [error] [exception.Error] Error: Undefined class constant 'getPendingCommentCount' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:12:03 [error] [exception.Error] Error: Undefined class constant 'getPendingCommentCount' in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php:4
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#3 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#10 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#23 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:12:20 [error] [exception.CException] CException: Property "Comment.getPendingCommentCount" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('getPendingComme...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): CActiveRecord->__get('getPendingComme...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#24 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:12:22 [error] [exception.CException] CException: Property "Comment.getPendingCommentCount" is not defined. in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('getPendingComme...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/views/userMenu.php(4): CActiveRecord->__get('getPendingComme...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(130): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', NULL, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/widgets/CWidget.php(244): CBaseController->renderFile('/Applications/X...', NULL, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/components/UserMenu.php(14): CWidget->render('userMenu')
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/zii/widgets/CPortlet.php(97): UserMenu->renderContent()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(182): CPortlet->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/layouts/column2.php(10): CBaseController->widget('UserMenu')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(787): CBaseController->renderFile('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(157): CController->render('index', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionIndex()
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#23 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/index')
+#24 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/blogApp/index.php/comment/index
+HTTP_REFERER=http://localhost/blogApp/index.php
+---
+2024/02/05 06:16:22 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:16:22 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:16:40 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:16:40 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php (119)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:17:36 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (63)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:17:36 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (63)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/PostController.php (76)
+in /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php (13)
+2024/02/05 06:50:02 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "search". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(229): CComponent->__call('search', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/comment/admin.php(45): CActiveRecord->__call('search', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(872): CBaseController->renderFile('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(172): CController->render('admin', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionAdmin()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/admin')
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blogApp/index.php/comment/admin
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/index
+---
+2024/02/05 06:50:07 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php:202
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(138): CommentController->loadModel('20')
+#1 [internal function]: CommentController->actionDelete('20')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CAction.php(114): ReflectionMethod->invokeArgs(Object(CommentController), Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(CommentController), Object(ReflectionMethod), Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1119): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/delete')
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blogApp/index.php/comment/delete/20
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/index
+---
+2024/02/05 06:50:23 [error] [exception.CException] CException: Comment and its behaviors do not have a method or closure named "search". in /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CComponent.php:264
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/db/ar/CActiveRecord.php(229): CComponent->__call('search', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/views/comment/admin.php(45): CActiveRecord->__call('search', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(872): CBaseController->renderFile('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(785): CController->renderPartial('admin', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/blogApp/protected/controllers/CommentController.php(172): CController->render('admin', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionAdmin()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#17 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/admin')
+#18 /Applications/XAMPP/xamppfiles/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /Applications/XAMPP/xamppfiles/htdocs/blogApp/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blogApp/index.php/comment/admin
+HTTP_REFERER=http://localhost/blogApp/index.php/comment/index
+---

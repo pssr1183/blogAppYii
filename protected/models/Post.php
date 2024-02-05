@@ -181,3 +181,5 @@ class Post extends CActiveRecord
 		return $comment->save();
 	}
 }
+
+
